@@ -21,5 +21,10 @@ public class Main {
 
         Satelite satelite1 = new Satelite(6,"pachuca","Luna",50,40000,"Si","14/02/2026",3,"Xhini_Xhino_DAM2");
         sateliteDAO.add(satelite1);
+        satelite1.setNombre_Satelite("Pikachu");
+        satelite1.setOrbita("Saturno");
+        sateliteDAO.update(6,satelite1);
+        System.out.println(sateliteDAO.find(3).toString());
+        sateliteDAO.findAll();
     }
 }
